@@ -8,7 +8,7 @@ exports = module.exports = {
 	},
 	redis: {
 		host: 'localhost',
-		port: "",
+		port: 6379,
 		passwd: null
 	},
 	new_user : {
