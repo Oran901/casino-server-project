@@ -14,4 +14,4 @@ RUN npm install
 COPY . .
 
 # Start the application
-CMD ["node", "bin/casino-server", "-r", "redis:6379"]
+CMD ["node", "bin/casino-server", "-r", "https://api.oyad.store"]
