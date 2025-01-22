@@ -64,7 +64,6 @@ jobs:
         run: |
           cd gitops/environments/dev
           yq e '.front.tag = "${{ github.sha }}"' -i values.yaml
-          yq e '.back.tag = "${{ github.sha }}"' -i values.yaml
 
       - name: check changes
         run: cat gitops/environments/dev/values.yaml
